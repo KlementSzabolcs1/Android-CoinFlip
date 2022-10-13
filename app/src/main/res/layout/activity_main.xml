@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/heads"
+        android:id="@+id/kep"
+
+        />
+
+    <Button
+        android:id="@+id/fejgomb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kep"
+        android:text="Fej"
+        />
+
+
+    <Button
+        android:id="@+id/irasgomb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kep"
+        android:layout_toRightOf="@+id/fejgomb"
+        android:text="Írás"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dobások: 0"
+        android:id="@+id/dobasok"
+        android:layout_below="@+id/fejgomb"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Győzelem: 0"
+        android:id="@+id/gyozelem"
+        android:layout_below="@+id/dobasok"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vereség: 0"
+        android:id="@+id/vereseg"
+        android:layout_below="@+id/gyozelem"
+
+        />
+
+
+
+</RelativeLayout>
